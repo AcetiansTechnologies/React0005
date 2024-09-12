@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+body, p, div, ul , li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.NavHeader{
+  background-color: rgb(243, 243, 243);
+  padding-left: 15vw;
+  padding-right: 15vw;
+  border-bottom: 1px lightgray solid;
+
+}
+.NavHeader>ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  
+}
+.Nav-Company-logo{
+  width: 7vw;
+}
+.NavHeader>ul>li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.NavHeader>ul>li>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.NavHeader>ul>li>input{
+  width: 25vw;
+  height: 2vw;
+  padding-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NAVBAR */
+
+.Navbar{
+  background-color: rgba(0, 0, 0, 0.74);
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+.Navbar>ul{
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Navbar>ul>li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+}
+.Navbar>ul>li>p{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HEAADER */
+
+.header-backgound{
+  width: 100vw;
+  height: 30vw;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.ibb.co/ZdtLNXv/Screenshot-2024-09-12-132337.png") ;
+}
+.Text-value{
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  display: flex;
+  justify-content: center;
+
+
+}
+.Text-value>p{
+  font-size: 20px;
+  width: 50vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.All-cources{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vw;
+  background-color: rgb(214, 214, 214);
+  width: 100vw;
+  padding-bottom: 5vw;
+
+}
+.All-cources>ul{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
+  width: 60vw;
+  text-decoration: underline;
+}
+.All-cources>ul>li{
+  font-size: 17px;
+  font-weight: bold;
+}
+.grid-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+.whyChoose-section{
+  padding-top: 2vw;
+}
+.whyChoose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  gap: 20px;
+}
+
+.whychoose-card {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 2vw;
+}
+
+
+
+.footer {
+  background-color: #000;
+  color: #00ff00; 
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.footer-section>h3 {
+    text-decoration: underline white;
+}
+
+.footer-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-list>li{
+  font-size:16px;
+  cursor: pointer;
+}
+.footer-list>li:hover{
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-item {
+  margin-bottom: 8px;
 }
+
+
+
