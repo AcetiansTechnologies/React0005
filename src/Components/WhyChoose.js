@@ -15,7 +15,6 @@ const WhyChoose = () => {
             trends.
           </p>
         </div>
-
         <div className="whychoose-card">
           <h2>Industry-Standard Tools and Frameworks</h2>
           <p>
@@ -23,7 +22,6 @@ const WhyChoose = () => {
             industry-standard software, tools, and frameworks.
           </p>
         </div>
-
         <div className="whychoose-card">
           <h2>Applications Across Industries</h2>
           <p>
@@ -47,7 +45,6 @@ const WhyChoose = () => {
             industry-standard software, tools, and frameworks.
           </p>
         </div>
-
         <div className="whychoose-card">
           <h2>Applications Across Industries</h2>
           <p>

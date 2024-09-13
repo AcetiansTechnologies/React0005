@@ -10,7 +10,7 @@ const CourcesNav = () => {
       <header className="Cource-Header"></header>
       <Navbar />
       <section>
-        <div>
+      
           <div className="course-container">
             <h1 className="course-title">About this Course</h1>
             <p className="course-description">
@@ -43,9 +43,6 @@ const CourcesNav = () => {
               This course contains one module: Introducing Model Kinds
             </p>
           </div>
-        </div>
-        <div>
-          {" "}
           <div className="details-container">
             <h1 className="details-title">Course Details</h1>
 
@@ -81,7 +78,7 @@ const CourcesNav = () => {
               Request a private workshop or view our public workshop schedule.
             </p>
           </div>
-        </div>
+      
       </section>
       <StayInformed/>
       <TeamTran/>

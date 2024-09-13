@@ -9,7 +9,7 @@ const AllPlaced = () => {
                 <li>Accelerated Computing</li>
                 <li>Data Science</li>
                 <li>Deep Learning</li>
-                <li>Generative AI/LLM</li>
+                <li>Generative AI/ML</li>
             </ul>
             <GrideCard/>
             <h3>view full catlog</h3>
