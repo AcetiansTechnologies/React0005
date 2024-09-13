@@ -153,16 +153,22 @@ body, p, div, ul , li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+  flex-wrap: wrap;
+
 }
+.whyChoose>div{
+  flex: auto !important;
+}
+
+
 
 .whychoose-card {
   background-color: #fff;
   border: none;
   padding: 20px;
-  width: 250px;
+  /* width: 250px; */
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -211,6 +217,273 @@ body, p, div, ul , li {
 
 .footer-item {
   margin-bottom: 8px;
+}
+
+
+.Whychoose-section-1{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Cource-Header{
+  width: 100vw;
+  height: 25vw;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.ibb.co/ZdtLNXv/Screenshot-2024-09-12-132337.png") ;
+}
+.Course-page-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.685);
+  align-items: center;
+  padding-right: 3vw;
+}
+.Course-page-nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 3vw;
+    padding-left: 2vw;
+}
+.Course-page-nav>ul>li{
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  color: white;
+
+}
+.Course-page-nav>ul>li:hover{
+    font-weight: bold;
+}
+.Course-page-nav>div>button{
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  width: 5vw;
+  cursor: pointer;;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+section>div{
+}
+
+
+
+
+.course-container {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.course-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.course-description {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.learning-objectives-title,
+.topics-covered-title,
+.course-outline-title {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+.learning-objectives-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+.learning-objectives-list li {
+  margin-bottom: 10px;
+}
+
+.topics-covered-description,
+.course-outline-description {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+.details-container {
+  max-width: 40vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.details-list {
+  list-style-type: none;
+  padding: 0;
+  color: #555;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.prerequisites-title,
+.instructor-title {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+.prerequisites-description,
+.instructor-description {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+.stay-informed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Full viewport height to center vertically */
+  background-color: #e2e2e2;
+  padding: 20px;
+  text-align: center;
+}
+
+.stay-informed-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stay-informed-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 80vw; /* Limit the width for readability */
+}
+
+.subscribe-button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+
+.training-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Full viewport height to center vertically */
+  background-color: #b4b4b4;
+  padding: 20px;
+  text-align: center;
+}
+
+.training-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.training-description {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 80vw; /* Limit width for better readability */
+}
+
+.contact-button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  margin-bottom: 2vw;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.catalog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.catalog-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #317a14;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.catalog-button:hover {
+  background-color: #208b0b;
 }
 
 
