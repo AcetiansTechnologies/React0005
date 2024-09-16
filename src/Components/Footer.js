@@ -5,36 +5,20 @@ const Footer = () => {
     <div>
       <footer className="footer">
         <div className="footer-content">
-
-          <div className="footer-section">
             
-            <ul className="footer-list">
-              <h5 className="footer-title">DLI Solutions</h5><hr></hr>
-              <li className="footer-item">Self-Paced, Online</li>
-              <li className="footer-item">Workshops</li>
-              <li className="footer-item">Live Instructor-Led</li>
-              <li className="footer-item">Courses</li>
-              <li className="footer-item">Workshops</li>
-              <li className="footer-item">Educator Programs and</li>
-              <li className="footer-item">Teaching Kits</li>
-              <li className="footer-item">NEnterprise Solutions</li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            
-            <ul className="footer-list">
-              <h5 className="footer-title">DLI Solutions</h5><hr></hr>
-              <li className="footer-item">Self-Paced, Online</li>
-              <li className="footer-item">Workshops</li>
-              <li className="footer-item">Live Instructor-Led</li>
-              <li className="footer-item">Courses</li>
-              <li className="footer-item">Workshops</li>
-              <li className="footer-item">Educator Programs and</li>
-              <li className="footer-item">Teaching Kits</li>
-              <li className="footer-item">NEnterprise Solutions</li>
-            </ul>
-          </div>
+           
+        <div class="footer-section">
+  <ul class="footer-list">
+    <h5 class="footer-title">Types of Courses</h5>
+    <hr />
+    <li class="footer-item">Live</li>
+    <li class="footer-item">Offline</li>
+    <li class="footer-item">One to One</li>
+    <li class="footer-item">Self-paced</li>
+    <li class="footer-item">Workshops</li>
+    <li class="footer-item">Webinars</li>
+  </ul>
+</div>
 
 
          
@@ -43,32 +27,53 @@ const Footer = () => {
             
             <ul className="footer-list">
             <h5 className="footer-title">Technologies</h5><hr></hr>
-              <li className="footer-item">CUDA-X AI</li>
-              <li className="footer-item">NGC Catalog</li>
-              <li className="footer-item">Data Analytics</li>
-              <li className="footer-item">Deep Learning SDKs</li>
-              <li className="footer-item">Deep Learning Frameworks</li>
-              <li className="footer-item">Conversational AI</li>
-              <li className="footer-item">Recommender Systems</li>
-              <li className="footer-item">Industry Frameworks</li>
+              <li className="footer-item">Python</li>
+              <li className="footer-item">Php</li>
+              <li className="footer-item">React</li>
+              <li className="footer-item">Node</li>
+              <li className="footer-item">HTML CSS JS</li>
+              <li className="footer-item">GO</li>
+              
             </ul>
           </div>
 
-          <div className="footer-section">
            
-            <ul className="footer-list">
-            <h5 className="footer-title">Resources</h5>
-            <hr></hr>
-              <li className="footer-item">Technical Resources</li>
-              <li className="footer-item">NVIDIA Developer</li>
-              <li className="footer-item">NVIDIA Research</li>
-              <li className="footer-item">GPU Technology Conference</li>
-              <li className="footer-item">Careers</li>
-              <li className="footer-item">Newsroom</li>
-              <li className="footer-item">Deep Learning Blogs</li>
-              <li className="footer-item">NVIDIA On-Demand</li>
-            </ul>
-          </div>
+        </div>
+        <div className='footer-bottom'>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="https://acetians.com/about" target="_blank">
+                    About Us
+                  </a></li>
+                <li>
+                 <a href="https://acetians.com/contact" target="_blank">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="https://acetians.com/careers" target="_blank">
+                    Careers
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a href="https://acetians.com/privacy-policy" target="_blank">
+                    Privacy Policy
+                  </a>
+                   
+                </li>
+                <li>
+                  <a href="https://acetians.com/contact" target="_blank">
+                    Bussines Enquiry
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>

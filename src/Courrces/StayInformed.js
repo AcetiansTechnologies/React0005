@@ -1,14 +1,15 @@
 import React from 'react'
 
-const StayInformed = () => {
+const StayInformed = ({clickTo}) => {
   return (
     <div className="stay-informed-container">
-    <h1 className="stay-informed-title">Stay Informed</h1>
+    <h1 className="stay-informed-title">Enrollment Benefits</h1>
     <p className="stay-informed-description">
-      Sign up for developer news, announcements, and more from NVIDIA. Get the latest information on new self-paced courses, 
-      instructor-led workshops, free training, discounts, and more. You can unsubscribe at any time.
+    Enroll now in Acetians Technologies' exclusive training programs!
+Gain access to self-paced courses, live workshops, free training sessions, and special discounts designed to enhance your skills and accelerate your career. Join our community of professionals and stay updated with the latest advancements in technology and innovation.
+Enroll today and take the next step towards your success!
     </p>
-    <button className="subscribe-button">Subscribe</button>
+    <button className="subscribe-button" type='button' onClick={clickTo}>Enroll Now</button>
   </div>
   )
 }

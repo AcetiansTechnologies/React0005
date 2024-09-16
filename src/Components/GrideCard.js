@@ -1,101 +1,110 @@
-import React from 'react'
+import React from 'react';
+import CourseCard from './CourseCard';
+import cardImage from '../images/ai-course.jpeg';
+import { useSelector } from 'react-redux';
+
+const courses = [
+  {
+    title: "Getting Started with Accelerated Computing with CUDA C or C++",
+    desc: "Learn the fundamentals of CUDA programming.",
+    duration: 8,
+    price: 90,
+    technologies: ["CUDA C++", "nvcc", "Nsight Systems"],
+    certificate: true,
+    cardImage:cardImage,
+  },
+  {
+    title: "Scaling GPU-Accelerated Applications with the C++ Standard Library",
+    desc: "Explore how to scale applications using C++ and GPUs.",
+    duration: 2,
+    price: 30,
+    technologies: ["C++", "NVIDIA HPC SDK", "MPI"],
+    certificate: false,
+    cardImage:cardImage,
+  },
+  {
+    title: "GPU Acceleration with the C++ Standard Library",
+    desc: "Understand GPU acceleration in the C++ Standard Library.",
+    duration: 2,
+    price: 30,
+    technologies: ["C++", "NVIDIA HPC SDK"],
+    certificate: false,
+    cardImage:cardImage,
+  },
+  {
+    title: "Getting Started with Accelerated Computing with CUDA C or C++",
+    desc: "Learn the fundamentals of CUDA programming.",
+    duration: 8,
+    price: 90,
+    technologies: ["CUDA C++", "nvcc", "Nsight Systems"],
+    certificate: true,
+    cardImage:cardImage,
+  },
+  {
+    title: "Scaling GPU-Accelerated Applications with the C++ Standard Library",
+    desc: "Explore how to scale applications using C++ and GPUs.",
+    duration: 2,
+    price: 30,
+    technologies: ["C++", "NVIDIA HPC SDK", "MPI"],
+    certificate: false,
+    cardImage:cardImage,
+  },
+  {
+    title: "GPU Acceleration with the C++ Standard Library",
+    desc: "Understand GPU acceleration in the C++ Standard Library.",
+    duration: 2,
+    price: 30,
+    technologies: ["C++", "NVIDIA HPC SDK"],
+    certificate: false,
+    cardImage:cardImage,
+  },
+  {
+    title: "Getting Started with Accelerated Computing with CUDA C or C++",
+    desc: "Learn the fundamentals of CUDA programming.",
+    duration: 8,
+    price: 90,
+    technologies: ["CUDA C++", "nvcc", "Nsight Systems"],
+    certificate: true,
+    cardImage:cardImage,
+  },
+  {
+    title: "Scaling GPU-Accelerated Applications with the C++ Standard Library",
+    desc: "Explore how to scale applications using C++ and GPUs.",
+    duration: 2,
+    price: 30,
+    technologies: ["C++", "NVIDIA HPC SDK", "MPI"],
+    certificate: false,
+    cardImage:cardImage,
+  },
+  {
+    title: "GPU Acceleration with the C++ Standard Library",
+    desc: "Understand GPU acceleration in the C++ Standard Library.",
+    duration: 2,
+    price: 30,
+    technologies: ["C++", "NVIDIA HPC SDK"],
+    certificate: false,
+    cardImage:cardImage,
+  }
+];
 
 const GrideCard = () => {
+  const coursesNew= useSelector((state)=> state.auth.courses);
   return (
-    <div class="grid-container">
-   
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>Getting Started with Accelerated Computing with CUDA C/C++</h3>
-      <p><strong>Duration:</strong> 8 hours</p>
-      <p><strong>Price:</strong> $90</p>
-      <p><strong>Technologies:</strong> CUDA C++, nvcc, Nsight Systems</p>
-      <p><strong>Certificate Available</strong></p>
+    <div className="grid-container">
+      {coursesNew.map((course, index) => (
+        <CourseCard
+          key={index}
+          title={course.title}
+          desc={course.desc}
+          duration={course.duration}
+          price={course.price}
+          technologies={course.technologies}
+          certificate={course.certificate}
+          cardImage={course.thumbnail_image}
+        />
+      ))}
     </div>
-
-
-    <div className="card">
-      <h3>FUNDAMENTAL</h3>
-      <h3>Scaling GPU-Accelerated Applications with the C++ Standard Library</h3>
-      <p><strong>Duration:</strong> 2 hours</p>
-      <p><strong>Price:</strong> $30</p>
-      <p><strong>Technologies:</strong> C++, NVIDIA HPC SDK, MPI</p>
-      <p><strong>Certificate Not Available</strong></p>
-    </div>
-
-   
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>GPU Acceleration with the C++ Standard Library</h3>
-      <p><strong>Duration:</strong> 2 hours</p>
-      <p><strong>Price:</strong> $30</p>
-      <p><strong>Technologies:</strong> C++, NVIDIA HPC SDK</p>
-      <p><strong>Certificate Not Available</strong></p>
-    </div>
-    
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>Getting Started with Accelerated Computing with CUDA C/C++</h3>
-      <p><strong>Duration:</strong> 8 hours</p>
-      <p><strong>Price:</strong> $90</p>
-      <p><strong>Technologies:</strong> CUDA C++, nvcc, Nsight Systems</p>
-      <p><strong>Certificate Available</strong></p>
-    </div>
-
-
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>Scaling GPU-Accelerated Applications with the C++ Standard Library</h3>
-      <p><strong>Duration:</strong> 2 hours</p>
-      <p><strong>Price:</strong> $30</p>
-      <p><strong>Technologies:</strong> C++, NVIDIA HPC SDK, MPI</p>
-      <p><strong>Certificate Not Available</strong></p>
-    </div>
-
-   
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>GPU Acceleration with the C++ Standard Library</h3>
-      <p><strong>Duration:</strong> 2 hours</p>
-      <p><strong>Price:</strong> $30</p>
-      <p><strong>Technologies:</strong> C++, NVIDIA HPC SDK</p>
-      <p><strong>Certificate Not Available</strong></p>
-    </div>
-
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>Getting Started with Accelerated Computing with CUDA C/C++</h3>
-      <p><strong>Duration:</strong> 8 hours</p>
-      <p><strong>Price:</strong> $90</p>
-      <p><strong>Technologies:</strong> CUDA C++, nvcc, Nsight Systems</p>
-      <p><strong>Certificate Available</strong></p>
-    </div>
-
-
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>Scaling GPU-Accelerated Applications with the C++ Standard Library</h3>
-      <p><strong>Duration:</strong> 2 hours</p>
-      <p><strong>Price:</strong> $30</p>
-      <p><strong>Technologies:</strong> C++, NVIDIA HPC SDK, MPI</p>
-      <p><strong>Certificate Not Available</strong></p>
-    </div>
-
-   
-    <div className="card">
-    <h3>FUNDAMENTAL</h3>
-      <h3>GPU Acceleration with the C++ Standard Library</h3>
-      <p><strong>Duration:</strong> 2 hours</p>
-      <p><strong>Price:</strong> $30</p>
-      <p><strong>Technologies:</strong> C++, NVIDIA HPC SDK</p>
-      <p><strong>Certificate Not Available</strong></p>
-    </div>
-
-
-
-    
-  </div>
-  )
+  );
 }
 
-export default GrideCard
+export default GrideCard;

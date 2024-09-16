@@ -4,14 +4,14 @@ import Text from './Text'
 import AllPlaced from './AllPlaced'
 import WhyChoose from './WhyChoose'
 
-const Home = () => {
+const Home = ({title,description,bgImage}) => {
   return (
     <div>
   
-      <Header/>
+      <Header title={title} description={description} bgImage={bgImage}/>
       <Text/>
       <AllPlaced/>
-      <WhyChoose/>
+      <WhyChoose title={title}/>
     
     </div>
   )

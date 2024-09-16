@@ -1,10 +1,10 @@
 import React from "react";
 
-const WhyChoose = () => {
+const WhyChoose = ({title}) => {
   return (
     <div className="whyChoose-section">
       <h1>
-        <center>Why Choose ACETIANS for Self-Paced Training?</center>
+        <center>Why Choose ACETIANS for {title}?</center>
       </h1>
       <div className="whyChoose">
         <div className="whychoose-card">
